@@ -1,0 +1,5 @@
+---
+- name: Simple Example
+  hosts: localhost
+  roles:
+    - { role: elasticsearch, es_instance_name: "node1", es_java_install: false, es_max_map_count: "", es_heap_size: 1g }

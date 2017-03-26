@@ -1,5 +1,6 @@
 - name: reload systemd configuration
   command: systemctl daemon-reload
+  when: use_system_d
 
 # Restart service and ensure it is enabled
 - name: restart elasticsearch
